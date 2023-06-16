@@ -14,13 +14,13 @@ object Apps {
     const val TEST_APPLICATION_ID = "com.hhy.util.sample.test"
 
     /** SDK 编译版本 */
-    const val COMPILE_SDK = 30
+    const val COMPILE_SDK = 32
 
     /** 最小 SDK 版本. */
     const val MIN_SDK = 19
 
     /** 目标 SDK 版本 */
-    const val TARGET_SDK = 30
+    const val TARGET_SDK = 32
 }
 
 object MavenUrls {
