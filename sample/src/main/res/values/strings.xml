@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name" translatable="false">util</string>
+    <string name="authentication_page_permission_tip">You need to request your camera permission in order to provide you with functions such as scan code login and image recognition</string>
+</resources>

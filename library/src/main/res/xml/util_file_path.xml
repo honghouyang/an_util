@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- 内部存储路径 -->
+    <!-- file ==>> app_util_file_path -->
+    <!-- context.getFilesDir /data/user/0/com.xxx.xxx/file/ -->
+    <files-path
+            name="app_util_file_path"
+            path="/" />
+    <!-- cache ==>> app_util_cache_path -->
+    <!-- context.getCacheDir /data/user/0/com.xxx.xxx/cache/ -->
+    <cache-path
+            name="app_util_cache_path"
+            path="/" />
+
+    <!-- 外部存储路径 -->
+    <!-- Environment.getExternalStorageDirectory() /storage/emulated/0/app_util_ext_root/ -->
+    <external-path
+            name="app_util_ext_root"
+            path="." />
+    <!-- file ==>> app_util_ext_pub -->
+    <!-- context.getExternalFilesDir(null) /storage/emulated/0/Android/data/com.xxx.xxx/file/ -->
+    <!-- context.getExternalFilesDir("type") /storage/emulated/0/Android/data/com.xxx.xxx/file/type -->
+    <external-files-path
+            name="app_util_ext_pub"
+            path="." />
+    <!-- cache ==>> app_util_ext_cache -->
+    <!-- context.getExternalCacheDir() /storage/emulated/0/Android/data/com.xxx.xxx/cache/ -->
+    <external-cache-path
+            name="app_util_ext_cache"
+            path="." />
+</paths>

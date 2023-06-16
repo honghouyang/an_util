@@ -1,0 +1,3 @@
+gradle clean \
+publishSnapshotAarPublicationToMavenRepository
+
