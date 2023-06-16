@@ -14,19 +14,20 @@ object Apps {
     const val TEST_APPLICATION_ID = "com.hhy.util.sample.test"
 
     /** SDK 编译版本 */
-    const val COMPILE_SDK = 32
+    const val COMPILE_SDK = 30
 
     /** 最小 SDK 版本. */
     const val MIN_SDK = 19
 
     /** 目标 SDK 版本 */
-    const val TARGET_SDK = 32
+    const val TARGET_SDK = 30
 }
 
 object MavenUrls {
     const val ALIBABA = "https://maven.aliyun.com/repository/public/"
     const val GOOGLE = "https://maven.aliyun.com/repository/google/"
     const val GRADLE = "https://maven.aliyun.com/repository/gradle-plugin/"
+    const val JITPACK = "https://jitpack.io"
 }
 
 object Sonar {

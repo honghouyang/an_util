@@ -34,14 +34,9 @@ fun createQRCode(
         Pair(EncodeHintType.ERROR_CORRECTION, errorCorrectionLevel),
         Pair(EncodeHintType.MARGIN, margin)
     )
-    val matrix = MultiFormatWriter()
-        .encode(
-            content,
-            BarcodeFormat.QR_CODE,
-            width,
-            height,
-            hints
-        )
+    val matrix = MultiFormatWriter().encode(
+        content, BarcodeFormat.QR_CODE, width, height, hints
+    )
     val pixels = IntArray(width * height)
     for (y in 0 until height) {
         for (x in 0 until width) {
@@ -94,14 +89,9 @@ fun createQRCodeWithIcon(
         Pair(EncodeHintType.ERROR_CORRECTION, errorCorrectionLevel),
         Pair(EncodeHintType.MARGIN, margin)
     )
-    val matrix = MultiFormatWriter()
-        .encode(
-            content,
-            BarcodeFormat.QR_CODE,
-            width,
-            height,
-            hints
-        )
+    val matrix = MultiFormatWriter().encode(
+        content, BarcodeFormat.QR_CODE, width, height, hints
+    )
 
     // logo 配置
     val halfW = matrix.width / 2
@@ -114,18 +104,13 @@ fun createQRCodeWithIcon(
     // 设置缩放信息
     // 将logo图片按 matrix 设置的信息缩放
     val mBitmap = Bitmap.createBitmap(
-        iconBitmap, 0, 0,
-        iconBitmap.width, iconBitmap.height, m, false
+        iconBitmap, 0, 0, iconBitmap.width, iconBitmap.height, m, false
     )
 
     val pixels = IntArray(width * height)
     for (y in 0 until height) {
         for (x in 0 until width) {
-            if (x > halfW - imgHalfWidth &&
-                x < halfW + imgHalfWidth &&
-                y > halfH - imgHalfWidth &&
-                y < halfH + imgHalfWidth
-            ) {
+            if (x > halfW - imgHalfWidth && x < halfW + imgHalfWidth && y > halfH - imgHalfWidth && y < halfH + imgHalfWidth) {
                 // 该位置用于存放图片信息
                 // 记录图片每个像素信息
                 pixels[y * width + x] = mBitmap.getPixel(

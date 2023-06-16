@@ -1,6 +1,5 @@
 package com.hhy.util.sample
 
-import android.Manifest
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
